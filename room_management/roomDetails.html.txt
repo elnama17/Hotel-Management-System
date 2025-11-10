@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Room Details</h2>
+  <p>Room Number: 101</p>
+  <p>Type: Double</p>
+  <p>Price: $120</p>
+  <button>Back to Search</button>
+</body>
+</html>
