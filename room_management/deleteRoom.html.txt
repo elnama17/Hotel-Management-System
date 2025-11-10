@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Delete Room</h2>
+  <form>
+    <label>Enter Room Number:</label>
+    <input type="text" placeholder="Room number"><br><br>
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Planning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Room Availability Calendar</h2>
+  <table border="1">
+    <tr><th>Room</th><th>Available Dates</th></tr>
+    <tr><td>101</td><td>10–15 Nov</td></tr>
+    <tr><td>102</td><td>12–17 Nov</td></tr>
+  </table>
+</body>
+</html>
