@@ -1,12 +1,12 @@
-import React from 'react';
-import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { HeaderButton, Text } from '@react-navigation/elements';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { PaymentManagement } from './screens/payment/PaymentManagement';
-import { Bills } from './screens/payment/Bills';
+import { BillsNavigator } from './BillsNavigator';
+import { PaymentsPageNavigator } from './PaymentsPageNavigator';
 
 export type PaymentStackParamList = {
   PaymentManagement: undefined;
-  Bills: undefined;
+  BillsNavigator: undefined;
+  PaymentsPageNavigator: undefined;
 };
 
 const Stack = createNativeStackNavigator<PaymentStackParamList>();
@@ -17,19 +17,17 @@ export function PaymentNavigator() {
       <Stack.Screen
         name="PaymentManagement"
         component={PaymentManagement}
-        options={{ title: 'Payment Management' }}
+        options={{ title: 'Payment Management' }} // ✅ tämä näyttää otsikon
       />
       <Stack.Screen
-        name="Bills"
-        component={Bills}
-        options={({ navigation }) => ({
-          title: 'Bills',
-          headerRight: () => (
-            <HeaderButton onPress={navigation.goBack}>
-              <Text>Close</Text>
-            </HeaderButton>
-          ),
-        })}
+        name="BillsNavigator"
+        component={BillsNavigator}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="PaymentsPageNavigator"
+        component={PaymentsPageNavigator}
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );
